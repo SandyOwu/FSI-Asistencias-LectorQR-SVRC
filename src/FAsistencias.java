@@ -55,6 +55,7 @@ public class FAsistencias extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         BNuevo = new javax.swing.JButton();
@@ -89,11 +90,15 @@ public class FAsistencias extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(0, 0, 51));
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("sansserif", 0, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Lista de asistencias");
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/guarderia.png"))); // NOI18N
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(30, 0, 70, 80);
+
+        jLabel1.setFont(new java.awt.Font("sansserif", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel1.setText("Guardería, lista de asistencias");
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(100, 30, 260, 24);
+        jLabel1.setBounds(120, 30, 370, 32);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo.jpg"))); // NOI18N
         jPanel1.add(jLabel2);
@@ -106,7 +111,7 @@ public class FAsistencias extends javax.swing.JFrame {
             }
         });
 
-        pCamara.setBackground(new java.awt.Color(0, 0, 102));
+        pCamara.setBackground(new java.awt.Color(204, 255, 255));
         pCamara.setMaximumSize(new java.awt.Dimension(480, 320));
         pCamara.setMinimumSize(new java.awt.Dimension(480, 320));
         pCamara.setPreferredSize(new java.awt.Dimension(480, 320));
@@ -117,7 +122,7 @@ public class FAsistencias extends javax.swing.JFrame {
         });
         pCamara.setLayout(new java.awt.GridLayout(1, 0));
 
-        jPanel2.setBackground(new java.awt.Color(0, 0, 51));
+        jPanel2.setBackground(new java.awt.Color(204, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder("ASISTENCIAS CONFIRMADAS:"));
 
         TLista.setModel(new javax.swing.table.DefaultTableModel(
@@ -163,16 +168,16 @@ public class FAsistencias extends javax.swing.JFrame {
                 .addContainerGap(28, Short.MAX_VALUE))
         );
 
-        jPanel3.setBackground(new java.awt.Color(0, 0, 51));
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder("INFANTE:"));
+        jPanel3.setBackground(new java.awt.Color(204, 255, 255));
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "INFANTE:", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 0, 11), new java.awt.Color(0, 0, 0))); // NOI18N
 
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Nombre:");
 
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Edad:");
 
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("RECEPTOR:");
 
         LNombre.setBackground(new java.awt.Color(102, 153, 255));
@@ -183,17 +188,17 @@ public class FAsistencias extends javax.swing.JFrame {
         LEdad.setForeground(new java.awt.Color(0, 0, 0));
         LEdad.setOpaque(true);
 
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setText("Código:");
 
         LCodigo.setBackground(new java.awt.Color(102, 153, 255));
         LCodigo.setForeground(new java.awt.Color(0, 0, 0));
         LCodigo.setOpaque(true);
 
-        TFEntregante.setBackground(new java.awt.Color(0, 0, 0));
-        TFEntregante.setForeground(new java.awt.Color(255, 255, 255));
+        TFEntregante.setBackground(new java.awt.Color(204, 204, 204));
+        TFEntregante.setForeground(new java.awt.Color(0, 0, 0));
 
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setText("ENTREGANTE:");
 
         SReceptor.setBackground(new java.awt.Color(0, 51, 102));
@@ -203,7 +208,7 @@ public class FAsistencias extends javax.swing.JFrame {
         LTutor.setForeground(new java.awt.Color(0, 0, 0));
         LTutor.setOpaque(true);
 
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setText("Tutor:");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -212,33 +217,28 @@ public class FAsistencias extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel7)
+                    .addComponent(jLabel4)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel8))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel8)
-                        .addGap(18, 18, 18)
-                        .addComponent(LTutor, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(LEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel5)
+                        .addGap(3, 3, 3)
+                        .addComponent(SReceptor, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel3))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(LEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel5)
-                                .addGap(3, 3, 3)
-                                .addComponent(SReceptor, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addComponent(LCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel6)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(TFEntregante, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(LNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(37, 37, 37))))
+                        .addComponent(LCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel6)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(TFEntregante, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(LNombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(LTutor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(37, 37, 37))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -348,7 +348,6 @@ public class FAsistencias extends javax.swing.JFrame {
 
         String cod = LCodigo.getText();
         String nom = LNombre.getText();
-        String tutor = LTutor.getText();
         String entregante = TFEntregante.getText();
         LocalDateTime ahora = LocalDateTime.now();
         DateTimeFormatter formatoFecha = DateTimeFormatter.ofPattern("dd/MM/yyyy");
@@ -357,7 +356,6 @@ public class FAsistencias extends javax.swing.JFrame {
         String hora = ahora.format(formatoHora);
         String fecha = ahora.format(formatoFecha);
 
-        float edad = Integer.parseInt(LEdad.getText());
         String receptor = (String) SReceptor.getSelectedItem();
 
         modelo.addRow(new Object[]{cod, nom, entregante, hora, fecha, receptor});
@@ -442,6 +440,7 @@ public class FAsistencias extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
